@@ -22,8 +22,8 @@ class App < Sinatra::Base
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     sentence = []
-    params.each do |p|
-      sentence << p
+    params.values.each do |v|
+      sentence << v
     end
     sentence
   end
