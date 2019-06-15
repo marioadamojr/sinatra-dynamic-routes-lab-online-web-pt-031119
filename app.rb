@@ -26,5 +26,6 @@ class App < Sinatra::Base
       sentence << p
     end
     sentence << "."
+    sentence
   end
 end
