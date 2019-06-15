@@ -25,7 +25,7 @@ class App < Sinatra::Base
     params.values.each do |v|
       sentence << "#{v}"
     end
-    sentence << "."
     sentence.join(" ")
+    sentence +"."
   end
 end
