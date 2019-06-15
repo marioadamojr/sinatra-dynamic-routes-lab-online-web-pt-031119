@@ -25,7 +25,6 @@ class App < Sinatra::Base
     params.each do |p|
       sentence << p
     end
-    sentence << "."
     sentence
   end
 end
