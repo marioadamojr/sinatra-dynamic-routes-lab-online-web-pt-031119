@@ -35,10 +35,12 @@ class App < Sinatra::Base
     case @op
     when "add"
       "#{@num1 + @num2}"
-    # if @op == "add"
-    #   "#{@num1 + @num2}"
-    # elsif @op == "subtract"
-    #
+    when "subtract"
+      "#{@num1 - @num2}"
+    when "multiply"
+      "#{@num1 * @num2}"
+    when "divide"
+      "#{@num1 / @num2}"
     end
 
   end
