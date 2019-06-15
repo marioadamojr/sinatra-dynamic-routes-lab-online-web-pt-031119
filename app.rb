@@ -26,5 +26,6 @@ class App < Sinatra::Base
       sentence << "#{v}"
     end
     sentence.join(" ")
+    sentence << "."
   end
 end
