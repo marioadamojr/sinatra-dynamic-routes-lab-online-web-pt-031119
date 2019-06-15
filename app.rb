@@ -17,5 +17,6 @@ class App < Sinatra::Base
     params[:number].times do
       result << params[:phrase]
     end
+    result
   end
 end
