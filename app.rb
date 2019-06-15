@@ -23,8 +23,8 @@ class App < Sinatra::Base
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     sentence = []
     params.values.each do |v|
-      sentence << v
+      sentence << "#{v} "
     end
-    sentence
+    sentence << "."
   end
 end
